@@ -17,7 +17,7 @@ public class Servlet {
     @GET
     public Response clear() {
         try {
-            final int sleepMSec = 500;
+            final int sleepMSec = 50;
             Thread.sleep(RANDOM.nextInt(sleepMSec));
         } catch (InterruptedException ignored) {}
         return Response.status(Response.Status.OK).entity("Hello from backend").build();
